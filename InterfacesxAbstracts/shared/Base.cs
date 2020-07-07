@@ -9,5 +9,10 @@ namespace InterfacesxAbstracts.shared
         {
             return true;
         }
+
+        public static bool thinksMortyIsStupid()
+        {
+            return true;
+        }
     }
 }

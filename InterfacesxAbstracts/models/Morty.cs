@@ -11,7 +11,8 @@ namespace InterfacesxAbstracts.models
         bool isReadyForAdventure = wantsToStartNewAdventure();
         public bool UsesPortalGun()
         {
-            Console.WriteLine("Ooh geez Rick i cant use this");
+            if(isReadyForAdventure)
+                Console.WriteLine("Ooh geez Rick i cant use this, but lets go for and adventure");
             return false;
         }
     }
