@@ -7,7 +7,7 @@ namespace InterfacesxAbstracts.models
     public class Rick : Base, IPortalGun
     {
         public Rick() : base(){ }        
-        bool ThinksMortyIsStupid = thinksMortyIsStupid();
+        bool ThinksMortyIsStupid = super ThinksMortyIsStupid();
 
         public bool UsesPortalGun()
         {

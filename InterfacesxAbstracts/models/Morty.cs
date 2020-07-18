@@ -8,10 +8,16 @@ namespace InterfacesxAbstracts.models
     {
         public Morty() : base() { }
 
-        bool isReadyForAdventure = wantsToStartNewAdventure();
+
+        private static bool WantsToStartNewAdventure()
+        {
+            return true;
+        }
+        bool isReadyForAdventure = WantsToStartNewAdventure();
+
         public bool UsesPortalGun()
         {
-            if(isReadyForAdventure)
+            if (isReadyForAdventure)
                 Console.WriteLine("Ooh geez Rick i cant use this, but lets go for and adventure");
             return false;
         }
